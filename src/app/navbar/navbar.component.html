@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <div class="navbar-brand">
+      <img src="../../assets/logoGZD.jpg" alt="logo" class="logo" />
+    </div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <div class="nav-link active" aria-current="page">
+            <div class="title"><a (click)="redirector()">Groupement Zrayeb Djerba</a></div>
+          </div>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <li class="nav-item d-flex justify-content-end">
+          <button class="nav-link" (click)="login()"
+            ><div class="login"><i class="bi bi-person"></i>Connexion</div></button
+          >
+        </li></span
+      >
+    </div>
+  </div>
+</nav>

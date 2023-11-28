@@ -1,0 +1,25 @@
+.navbar{
+  background-color:  rgba(250, 251, 243, 0.73);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.267);
+}
+.logo{
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+}
+
+.title,.login{
+  color: #1971B1;
+  font-weight: 500 ;
+  font-size: 20px;
+}
+.login{
+  margin-right: 15px;
+}
+.bi{
+  font-size: 20px;
+  margin-right: 5px;
+}
+a:hover{
+  cursor: pointer;
+}

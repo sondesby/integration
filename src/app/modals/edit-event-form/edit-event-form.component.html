@@ -1,0 +1,123 @@
+<div class="container p-5">
+  <div class="box">
+    <div class="row">
+      <div class="col-11"></div>
+      <div class="col-1">
+        <button class="btn" (click)="onCancel()">
+          <i class="bi bi-x-circle"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="d-flex justify-content-center m-3">
+        <h3>Editer un événement</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <form [formGroup]="EditForm" (ngSubmit)="onSave()">
+        <div class="form-group mb-3">
+          <div class="row">
+            <label for="nom" class="col-4 col-form-label">Nom :</label>
+            <div class="col-8">
+              <input
+                type="text"
+                id="nom"
+                formControlName="nom"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group mb-3">
+          <div class="row">
+            <label for="date" class="col-4 col-form-label">Date :</label>
+            <div class="col-8">
+              <input
+                type="date"
+                id="date"
+                formControlName="date"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group mb-3">
+          <div class="row">
+            <label for="lieu" class="col-4 col-form-label">Lieu :</label>
+            <div class="col-8">
+              <input
+                type="text"
+                id="lieu"
+                formControlName="lieu"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group mb-3">
+          <div class="row">
+            <label for="hote" class="col-4 col-form-label">Hote :</label>
+            <div class="col-8">
+              <select id="hote" name="" class="form-control">
+                <option value="">Ahmed</option>
+                <option value="">Salem</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group mb-3">
+          <div class="row">
+            <label for="description" class="col-4 col-form-label"
+              >Description :</label
+            >
+            <div class="col-8">
+              <textarea
+                id="description"
+                formControlName="description"
+                class="form-control"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group mb-3">
+          <div class="row mb-3">
+            <label for="image" class="col-4 col-form-label">Image :</label>
+            <div class="col-8">
+              <input
+                type="file"
+                id="image"
+                class="form-control"
+                accept="image/*"
+              />
+              <!-- (change)="onFileSelected($event)" -->
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group">
+            <div class="col-12 d-flex justify-content-center mt-4">
+              <button
+                mat-button
+                class="btn btn-secondary m-1"
+                (click)="onCancel()"
+              >
+                Annuler
+              </button>
+              <button mat-button class="btn btn-primary m-1" type="submit">
+                Modifier
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

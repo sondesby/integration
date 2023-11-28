@@ -1,0 +1,14 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.page{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.header{
+    height: 10vh;
+}
+.main{
+    height: 88vh;
+}
+.footer{
+    height: 30vh;
+}

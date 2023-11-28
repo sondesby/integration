@@ -1,0 +1,22 @@
+.footer{
+    height: 30vh;
+    background-color: #1971b1;
+    color: white;
+    
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+}
+p{
+    width: 70%;
+}
+.contacts{
+    font-size: 18px;
+}
+.socials{
+    font-size: 35px;
+    text-decoration: none;
+    color: white !important;
+    width: 30px;
+}
